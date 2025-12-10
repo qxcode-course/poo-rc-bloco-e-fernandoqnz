@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-10_13-32-57",
+            "content": "class Veiculo:\n    def __init__(self, id:str, tipo:str, hE:int):\n        \n        ",
+            "lines": "4"
+        }
+    ]
+}
