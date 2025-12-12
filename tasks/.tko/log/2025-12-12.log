@@ -1,0 +1,36 @@
+2025-12-12 13:27:39, MOVE, v:1, k:poo@zoo, mode:DOWN
+2025-12-12 14:02:30, MOVE, v:1, k:poo@zoo, mode:PICK
+2025-12-12 14:02:31, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:100, size:54
+2025-12-12 14:02:33, MOVE, v:1, k:poo@zoo, mode:BACK
+2025-12-12 14:02:41, MOVE, v:1, k:poo@zoo, mode:PICK
+2025-12-12 14:02:42, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:100
+2025-12-12 14:02:42, MOVE, v:1, k:poo@zoo, mode:BACK
+2025-12-12 14:08:10, MOVE, v:1, k:poo@zoo, mode:PICK
+2025-12-12 14:08:11, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0, size:63
+2025-12-12 14:09:52, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0, size:64
+2025-12-12 14:09:53, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0
+2025-12-12 14:09:54, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0
+2025-12-12 14:09:59, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0, size:64
+2025-12-12 14:10:12, MOVE, v:1, k:poo@zoo, mode:BACK
+2025-12-12 14:10:16, MOVE, v:1, k:poo@pagamento, mode:DOWN
+2025-12-12 14:26:10, MOVE, v:1, k:poo@pagamento, mode:PICK
+2025-12-12 14:26:10, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0, size:16
+2025-12-12 14:26:11, MOVE, v:1, k:poo@pagamento, mode:BACK
+2025-12-12 15:16:05, MOVE, v:1, k:poo@pagamento, mode:PICK
+2025-12-12 15:16:06, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:100, size:97
+2025-12-12 15:16:07, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:100
+2025-12-12 15:16:08, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:100
+2025-12-12 15:16:24, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0, size:102
+2025-12-12 15:16:25, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0
+2025-12-12 15:17:37, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0, size:103
+2025-12-12 15:17:38, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0
+2025-12-12 15:17:43, MOVE, v:1, k:poo@pagamento, mode:BACK
+2025-12-12 15:17:46, MOVE, v:1, k:poo@pagamento, mode:PICK
+2025-12-12 15:17:47, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0
+2025-12-12 15:17:47, MOVE, v:1, k:poo@pagamento, mode:BACK
+2025-12-12 15:17:49, MOVE, v:1, k:poo@pagamento, mode:PICK
+2025-12-12 15:17:49, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0
+2025-12-12 15:17:50, MOVE, v:1, k:poo@pagamento, mode:BACK
+2025-12-12 15:18:03, MOVE, v:1, k:poo@pagamento, mode:PICK
+2025-12-12 15:18:03, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:100, size:101
+2025-12-12 15:18:04, MOVE, v:1, k:poo@pagamento, mode:BACK
