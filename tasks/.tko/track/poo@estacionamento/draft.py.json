@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-12-10_13-32-57",
-            "content": "class Veiculo:\n    def __init__(self, id:str, tipo:str, hE:int):\n        \n        ",
+            "content": "@@ -1,41 +1,4 @@\n-from abc import ABC, abstractmethod%0A%0A\n clas\n@@ -10,13 +10,8 @@\n culo\n-(ABC)\n :%0A  \n@@ -43,440 +43,26 @@\n tr, \n-entrada, tipo:str):%0A        super().__init__()%0A        self.id = id%0A        self.entrada:None=entrada%0A        self.tipo=tipo%0A%0A    def getEntrada(self):%0A        return self.entrada%0A    %0A    def setEntrada(self, entrada):%0A        self.entrada = entrada%0A    %0A    @abstractmethod%0A    def calcularValor(self,horaSaida):%0A        pass%0A%0A    def __str__(self):%0A        print(f%22%7Bself.tipo%7D : %7Bself.id%7D : %7Bself.entrada%7D%22)%0A%0A    %0A%0A%0A    %0A        \n+tipo:str, hE:int):\n %0A   \n",
             "lines": "4"
+        },
+        {
+            "label": "2025-12-13_20-02-04",
+            "content": "from abc import ABC, abstractmethod\n\nclass Veiculo(ABC):\n    def __init__(self, id:str, entrada, tipo:str):\n        super().__init__()\n        self.id = id\n        self.entrada:None=entrada\n        self.tipo=tipo\n\n    def getEntrada(self):\n        return self.entrada\n    \n    def setEntrada(self, entrada):\n        self.entrada = entrada\n    \n    @abstractmethod\n    def calcularValor(self,horaSaida):\n        pass\n\n    def __str__(self):\n        print(f\"{self.tipo} : {self.id} : {self.entrada}\")\n\n    \n\n\n    \n        \n        \n        ",
+            "lines": "29"
         }
     ]
 }
