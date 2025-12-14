@@ -7,8 +7,23 @@
         },
         {
             "label": "2025-12-13_20-02-04",
-            "content": "from abc import ABC, abstractmethod\n\nclass Veiculo(ABC):\n    def __init__(self, id:str, entrada, tipo:str):\n        super().__init__()\n        self.id = id\n        self.entrada:None=entrada\n        self.tipo=tipo\n\n    def getEntrada(self):\n        return self.entrada\n    \n    def setEntrada(self, entrada):\n        self.entrada = entrada\n    \n    @abstractmethod\n    def calcularValor(self,horaSaida):\n        pass\n\n    def __str__(self):\n        print(f\"{self.tipo} : {self.id} : {self.entrada}\")\n\n    \n\n\n    \n        \n        \n        ",
+            "content": "@@ -169,16 +169,21 @@\n .entrada\n+:None\n =entrada\n@@ -441,23 +441,22 @@\n         \n-return \n+print(\n f%22%7Bself.\n@@ -490,16 +490,17 @@\n ntrada%7D%22\n+)\n %0A%0A    %0A%0A\n@@ -505,16 +505,24 @@\n %0A%0A%0A    %0A\n+        \n %0A       \n",
             "lines": "29"
+        },
+        {
+            "label": "2025-12-14_00-38-49",
+            "content": "@@ -492,176 +492,29 @@\n %7D%22%0A%0A\n-class Bike(Veiculo):%0A    def __init__(self, id: str, entrada, tipo: str):%0A        super().__init__(id, entrada, tipo)%0A         %0A    def calcularValor(self, horaSaida):%0A\n+    %0A%0A%0A    %0A%0A        \n %0A   \n@@ -510,17 +510,16 @@\n        %0A        \n-%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-12-14_00-48-08",
+            "content": "@@ -552,1011 +552,122 @@\n rada\n-):%0A        super().__init__(id, entrada, %22Bike%22)%0A         %0A    def calcularValor(self, horaSaida):%0A        return 3%0A%0Aclass Moto(Veiculo):%0A    def __init__(self, id: str, entrada):%0A        super().__init__(id, entrada, %22Moto%22)%0A%0A%0A    def calcularValor(self, horaSaida):%0A        calculo = horaSaida - self.entrada%0A        return calculo/20%0A    %0Aclass Carro(Veicul\n+, tipo: str):%0A        super().__init__(id, entrada, tip\n o)\n-:\n %0A    \n-def __init__(self, id: str, entrada):%0A        super().__init__(id, entrada, %22Carro%22)%0A    %0A    def calcularValor(self, horaSaida):%0A        tempo = horaSaida - self.entrada%0A        valor = tempo / 10%0A        if valor %3C5:%0A            return 5%0A        return valor%0A%0Aclass Estacionamento:%0A    def __init__(self):%0A        self.veiculos = %5B%5D%0A%0A    def entrar(self, veiculo):%0A        self.veiculos.append(veiculo)%0A    %0A    def sair(self, id, horaSaida, veiculo:Veiculo):%0A        for c in self.veiculos:%0A            if c.id != c:%0A                veiculo.calcularValor%0A                del(c.id)%0A            else:%0A                print(%22id invalido%22)\n+     %0A    def calcularValor(self, horaSaida):%0A%0A        \n %0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-12-14_01-28-49",
+            "content": "from abc import ABC, abstractmethod\n\nclass Veiculo(ABC):\n    def __init__(self, id:str, entrada, tipo:str):\n        super().__init__()\n        self.id = id\n        self.entrada=entrada\n        self.tipo=tipo\n\n    def getEntrada(self):\n        return self.entrada\n    \n    def setEntrada(self, entrada):\n        self.entrada = entrada\n    \n    @abstractmethod\n    def calcularValor(self,horaSaida):\n        pass\n\n    def __str__(self):\n        return f\"{self.tipo} : {self.id} : {self.entrada}\"\n\nclass Bike(Veiculo):\n    def __init__(self, id: str, entrada):\n        super().__init__(id, entrada, \"Bike\")\n         \n    def calcularValor(self, horaSaida):\n        return 3\n\nclass Moto(Veiculo):\n    def __init__(self, id: str, entrada):\n        super().__init__(id, entrada, \"Moto\")\n\n\n    def calcularValor(self, horaSaida):\n        calculo = horaSaida - self.entrada\n        return calculo/20\n    \nclass Carro(Veiculo):\n    def __init__(self, id: str, entrada):\n        super().__init__(id, entrada, \"Carro\")\n    \n    def calcularValor(self, horaSaida):\n        tempo = horaSaida - self.entrada\n        valor = tempo / 10\n        if valor <5:\n            return 5\n        return valor\n\nclass Estacionamento:\n    def __init__(self):\n        self.veiculos = []\n\n    def entrar(self, veiculo):\n        self.veiculos.append(veiculo)\n    \n    def sair(self, id, horaSaida, veiculo:Veiculo):\n        for c in self.veiculos:\n            if c.id != c:\n                veiculo.calcularValor\n                del(c.id)\n            else:\n                print(\"id invalido\")\n",
+            "lines": "63"
         }
     ]
 }
